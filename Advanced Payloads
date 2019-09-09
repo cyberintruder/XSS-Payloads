@@ -1,0 +1,5 @@
+Inside Javascript
+  eval("confirm(10)")
+  (new Function('return '+code))() 
+  (new Function('return '%2bcode))() 
+  http://jsfuck.com
